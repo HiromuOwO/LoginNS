@@ -1,27 +1,32 @@
-# LoginNS
+# Login con validacion usando APIs de terceros
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+El login solicitara al usuario ingresar un correo electronico y contraseña, estos datos seran validados usando una API de terceros. 
+Si los datos coinciden se ingresara a la ventana de inicio de lo contrario se arrojara una alerta de que el usuario no existe.
 
-## Development server
+## 1. Creacion del proyecyo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+• ng new LoginNS --no-standalone
+• aceptar las opciones predeterminadas cuando se solicite.
+• cd LoginNS
+![image](https://github.com/user-attachments/assets/3fa30cab-107e-4aea-bc52-75ce71ed83ad)
 
-## Code scaffolding
+![image](https://github.com/user-attachments/assets/16f21e9a-858a-4bee-a88e-e64fd9344ad1)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## 2. Crear los componentes 
+
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
