@@ -18,6 +18,9 @@ Si los datos coinciden se ingresara a la ventana de inicio de lo contrario se ar
 
 
 ## 2. Crear los componentes 
+--Componente Login
+`ng generate module login; ng generate component login --module=login`
+
 
 
 ## Build
