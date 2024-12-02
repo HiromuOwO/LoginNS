@@ -1,0 +1,78 @@
+table{
+  border: 1px solid rgb(7, 11, 223);
+  border-collapse: collapse;
+  padding: 5px;
+
+  font-family: arial, sans-serif;
+  
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #9ae4eb;
+  text-align: left;
+  padding: 8px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ceddea;
+}
+
+table tr:nth-child(even) {
+  background-color: #c8cee5;
+}
+
+.tablaContenedor{
+  max-width: 4000px;
+  margin: 100px auto;
+  padding: 40px;
+  border: 1px solid #0d4175;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  
+
+}
+
+.botonEliminar {
+  width: 15%;
+  padding: 10px;
+  font-size: 1.0rem;
+  color: #0f0e0e;
+  background-color: #eb5e5e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+
+.bontonEditar {
+  width: 15%;
+  padding: 10px;
+  font-size: 1.0rem;
+  color: #0f0e0e;
+  background-color: #ecc251;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.botonDetalles{
+  width: 15%;
+  padding: 10px;
+  font-size: 1.0rem;
+  color: #0f0e0e;
+  background-color: #8af1a4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+
+

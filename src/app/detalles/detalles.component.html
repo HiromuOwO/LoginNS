@@ -1,0 +1,20 @@
+
+<h1 mat-dialog-title>Detalles de {{ data.name }}</h1>
+<div mat-dialog-content>
+  <img [src]="data.image" alt="{{ data.name }}" class="img-fluid mb-3">
+  <p><strong>Especie:</strong> {{ data.species }}</p>
+  <p><strong>Estado:</strong> {{ data.status }}</p>
+  <p><strong>Género:</strong> {{ data.gender }}</p>
+  <p><strong>Origen:</strong> {{ data.origin?.name }}</p>
+  <p><strong>Tipo:</strong> {{ data.type }}</p>
+  <p><strong>Ubicacion:</strong> {{ data.loaction?.name }}</p>
+  
+  <p><strong>Creacion:</strong> {{ data.cretaed}}</p>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close class="botonCerrar">Cerrar</button>
+</div>
+
+
+

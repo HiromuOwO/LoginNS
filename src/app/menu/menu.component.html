@@ -1,0 +1,19 @@
+
+  <nav class="navbar">
+    <div class="navbar-logo">
+      Rick & Morty
+    </div>
+    <div *ngIf="currentUser">
+        <img clas="imagen"[src]="currentUser.avatar"  class="navbar-profile-img">
+        <ul>Perfil de {{ currentUser.name }}</ul>
+      </div>
+      
+      
+    <ul class="navbar-links">
+      <li><a href="login.component.html">Cerrar Sesión</a></li>
+    </ul>
+  
+ 
+    
+  </nav>
+  

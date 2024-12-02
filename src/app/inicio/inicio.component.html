@@ -1,21 +1,41 @@
-<div class="container">
-  <h1 class="mb-4">Lista de Personajes</h1>
+<app-menu></app-menu>
 
-  <!-- Tabla de Personajes -->
-  <table >
+<div class="tablaContenedor">
+  <h2>Lista de personajes </h2>
+  <app-buscador (searchTextChanged)="onSearchTextChanged($event)"></app-buscador>
+
+  <table class="table">
     <thead>
       <tr>
-        <th>#</th>
+        <th>ID</th>
         <th>Nombre</th>
-        <th>Imagen</th>
-        <th>Estado</th>
         <th>Especie</th>
+        <th>Estado</th>
+        <th>Fotografía</th>
+        
       </tr>
     </thead>
     <tbody>
-      
+      <tr *ngFor="let user of filteredCharacters | paginate: { itemsPerPage: 4, currentPage: p }">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.species }}</td>
+        <td>{{user.status}}</td>
+        <td style="text-align: center">
+          <img [src]="user.image" alt="{{ user.name }}" width="150" height="140">
+          <div>
+            <button class="botonDetalles" (click)="openModal(user)">Ver detalles</button>
+            <div>
+              <button class="bontonEditar" (click)="actualizarCharacter(user)">Editar</button>
+              <button class="botonEliminar" (click)="borrarCharacter(user.id)" >Eliminar</button>
+            </div>
+          </div>
+        </td>
+      </tr>
     </tbody>
   </table>
 
-  
+  <div class="d-flex justify-content-center">
+    <pagination-controls (pageChange)="p = $event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+  </div>
 </div>

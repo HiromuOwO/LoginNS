@@ -1,0 +1,30 @@
+input[type="text"] {
+    width: 95%;
+    padding: 12px 20px;
+    font-size: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 25px; 
+    box-shadow: 0 2px 5px rgba(64, 66, 223, 0.1); 
+    outline: none; 
+    transition: all 0.3s ease; 
+  }
+  
+  
+  input[type="text"]:focus {
+    border-color: #579ce6; 
+    box-shadow: 0 4px 10px rgba(7, 195, 67, 0.2); 
+  }
+  
+ 
+  input[type="text"]::placeholder {
+    color: #888; 
+    font-style: italic;
+  }
+  
+  
+  input[type="text"].form-control.my-3 {
+    margin-top: 25px; 
+    margin-bottom: 25px; 
+  }
+
+ 

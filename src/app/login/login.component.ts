@@ -2,12 +2,16 @@ import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  
+
+
   username: string = '';
   password: string = '';
   showErrorMessage: boolean = false;
@@ -18,18 +22,16 @@ export class LoginComponent {
   onSubmit(): void {
     this.authService.login(this.username, this.password).subscribe(isAuthenticated => {
       if (isAuthenticated) {
-        this.router.navigate(['/inicio']); // Redirige a la ruta de inicio
+        this.router.navigate(['/inicio']); 
       } else {
-        this.showErrorMessage = true; // Muestra el mensaje de error
+        this.showErrorMessage = true; 
       }
     });
   }
 
   closeErrorMessage(): void {
-    this.showErrorMessage = false; // Oculta el mensaje de error
+    this.showErrorMessage = false; 
   }
 
-  togglePasswordVisibility(): void {
-    this.showPassword = !this.showPassword; // Cambia la visibilidad de la contraseña
-  }
+ 
 }

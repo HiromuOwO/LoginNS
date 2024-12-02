@@ -1,5 +1,3 @@
-// src/app/models/character.model.ts
-
 export interface Character {
     id: number;
     name: string;
@@ -20,3 +18,4 @@ export interface Character {
     url: string;
     created: string;
   }
+

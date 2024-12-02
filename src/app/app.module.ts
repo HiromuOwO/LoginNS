@@ -6,18 +6,32 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { InicioComponent } from './inicio/inicio.component';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { BuscadorComponent } from './buscador/buscador.component';
+import { MenuComponent } from './menu/menu.component';
+
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { DetallesComponent } from './detalles/detalles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    InicioComponent
+    InicioComponent,
+    BuscadorComponent,
+    MenuComponent,
+    DetallesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule,
+    MatDialogModule,
+    MatButtonModule,
+   
   ],
   providers: [
     provideClientHydration()
