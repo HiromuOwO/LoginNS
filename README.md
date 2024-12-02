@@ -1,27 +1,52 @@
-# LoginNS
+# Login con validacion usando APIs de terceros
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+El login solicitara al usuario ingresar un correo electronico y contraseña, estos datos seran validados usando una API de terceros. 
+Si los datos coinciden se ingresara a la ventana de inicio de lo contrario se arrojara una alerta que indicara que las credenciales no coinciden
 
-## Development server
+## 1. Creacion del proyecyo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+• ng new LoginNS --no-standalone
 
-## Code scaffolding
+• aceptar las opciones predeterminadas cuando se solicite.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+• cd LoginNS
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://github.com/user-attachments/assets/3fa30cab-107e-4aea-bc52-75ce71ed83ad)
 
-## Running unit tests
+![image](https://github.com/user-attachments/assets/16f21e9a-858a-4bee-a88e-e64fd9344ad1)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## 2. Crear los componentes 
+--Componente Login
+`ng generate component login`
+Para la vista se modificara el HTML y el CSS 
+![image](https://github.com/user-attachments/assets/c355cc80-5bd8-474e-a294-0678701feb54)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+--Componente inicio
+Sera solamenta la pagina a la que se redireccionara cuando el usuario sea correcto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Creacion del servicio 
+
+
+  ![image](https://github.com/user-attachments/assets/0ba81463-0011-44cc-9b5f-a4a8e70fbccd)
+
+
+
+## Modificarl el .ts de nuestro componente Login
+![image](https://github.com/user-attachments/assets/97688baf-f4e2-4f98-b853-327c9ebd2200)
+
+
+
+
+## Ingresoar
+--Al ingresar datos incorrectos
+
+![image](https://github.com/user-attachments/assets/9469bdaa-c8bf-4f7c-8a5a-8e2b2bc166fa)
+
+-- Al ingresar datos correctos 
+![image](https://github.com/user-attachments/assets/9974c83c-18df-4421-b198-ba509947946f)
+
+
+
